@@ -63,7 +63,7 @@ def down_load(content):
     for i in range(len(imgs_name)):
         name = imgs_name[i]
         add = imgs_add[i]
-        urllib.request.urlretrieve(url=add,filename='./4K/'+name+'.jpg')
+        urllib.request.urlretrieve(url=add,filename='D:\projects\python/resource/beautyImgs'+name+'.jpg')
         # 下载多页图片时出现错误：urllib.error.ContentTooShortError: <urlopen error retrieval incomplete:
         # got only 366683 out of 855014 bytes>
 
