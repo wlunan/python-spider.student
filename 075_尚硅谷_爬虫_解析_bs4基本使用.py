@@ -31,6 +31,8 @@ soup = BeautifulSoup(open('075.html',encoding='utf8'),'lxml')
 # limit的作用是限制查找的前几个数据
 # print(soup.find_all('li',limit=2))
 
+
+
 # 3.select（推荐）
 # select返回的是一个列表，并会返回多个数据
 # print(soup.select('a'))
@@ -71,7 +73,7 @@ soup = BeautifulSoup(open('075.html',encoding='utf8'),'lxml')
 # print(obj.attrs)
 
 # 获取节点的属性
-# obj = soup.select('#p1')[0]
-# print(obj.attrs.get('class'))
+obj = soup.select('#p1')[0]
+print(obj.attrs.get('class'))
 # print(obj.get('class'))
 # print(obj['class'])
